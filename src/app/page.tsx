@@ -36,14 +36,3 @@ export default function Home() {
       <FooterMain />
     </>
   )
-}
-
-
-{/* <Image
-  src="/next.svg"
-  alt="Next.js Logo"
-  width={180}
-  height={37}
-  priority
-/> */}
-{/* <Link href={`link/${Image}`}/> */}
