@@ -8,7 +8,7 @@ export function HeaderMain() {
     return (
         <header className={styles.cabecalho}>
             <div className={styles.container}>
-                <div className={styles['container-logo']}>
+                <Link href={'/'} className={styles['container-logo']}>
                     <Image
                         src={Icon}
                         alt='icon-logo'
@@ -17,7 +17,7 @@ export function HeaderMain() {
                     />
 
                     <h1>Registro Médico</h1>
-                </div>
+                </Link>
 
                 <div className={styles['container-btns']}>
                     <Link href={'login'} className={styles['link-login']}>Login</Link>

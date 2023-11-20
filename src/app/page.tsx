@@ -13,13 +13,13 @@ export default function Home() {
       <main className={styles.menu}>
         <div>
           <h2>
-            Buscando a qualidade de vida que você merece, faça o seu cadastro e confira.
+            Buscando a qualidade de vida que você merece, faça o seu cadastro e confira.
           </h2>
 
           <p>
             A Registro médico, é uma plataforma simples e de fácil usuabilidade onde os médicos
             poderão disponibilizar consultas e serem remunerados por isso, já os pacientes poderão
-            marcar consulta com médicos de todas as especialidades, faça seu cadastro e confira.
+            marcar consulta com médicos de todas as especialidades, faça seu cadastro e confira.
           </p>
         
           <Link href={'login'} className={styles['link-login']}>Login</Link>
@@ -36,4 +36,3 @@ export default function Home() {
       <FooterMain />
     </>
   )
-}
