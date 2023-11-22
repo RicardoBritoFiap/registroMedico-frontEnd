@@ -9,8 +9,8 @@ export default function Cadastro() {
             <HeaderMain />
 
             <main className={styles.menu}>
-                <Link href={'cadastro-medico'} className={styles.link} style={{marginTop: '-10vh'}}>Cadastro Médico</Link>
-                <Link href={'cadastro-paciente'} className={styles.link}>Cadastro Paciente</Link>
+                <Link href={'/cadastro-medico'} className={styles.link} style={{marginTop: '-10vh'}}>Cadastro Médico</Link>
+                <Link href={'/cadastro-paciente'} className={styles.link}>Cadastro Paciente</Link>
             </main>
 
             <FooterMain />        

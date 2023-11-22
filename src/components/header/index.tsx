@@ -20,8 +20,59 @@ export function HeaderMain() {
                 </Link>
 
                 <div className={styles['container-btns']}>
-                    <Link href={'login'} className={styles['link-login']}>Login</Link>
-                    <Link href={'cadastro'} className={styles['link-register']}>Cadastre-se</Link>
+                    <Link href={'/login'} className={styles['link-login']}>Login</Link>
+                    <Link href={'/cadastro'} className={styles['link-register']}>Cadastre-se</Link>
+                </div>
+            </div>
+        </header>
+    )
+}
+
+export function HeaderDoctor() {
+    return (
+        <header className={styles['cabecalho-doctor']}>
+            <div className={styles.container}>
+                <Link href={'/'} className={styles['container-logo']}>
+                    <Image
+                        src={Icon}
+                        alt='icon-logo'
+                        width={46}
+                        height={46}
+                        className={styles['icon-logo']}
+                    />
+
+                    <h1>Registro Médico</h1>
+                </Link>
+
+                <div className={styles['container-btns']}>
+                    <Link href={'/medico'} className={styles['link-dados']}>Meus Dados</Link>
+                    <Link href={'/medico/consultas-marcadas'} className={styles['link-consultas']}>Consultas Marcadas</Link>
+                </div>
+            </div>
+        </header>
+    )
+}
+
+export function HeaderPatient() {
+    return (
+        <header className={styles['cabecalho-paciente']}>
+            <div className={styles.container}>
+                <Link href={'/'} className={styles['container-logo']}>
+                    <Image
+                        src={Icon}
+                        alt='icon-logo'
+                        width={36}
+                        height={36}
+                        className={styles['icon-logo']}
+                    />
+
+                    <h1>Registro Médico</h1>
+                </Link>
+
+                <div className={styles['container-btns']}>
+                    <Link href={'/paciente'} className={styles['link-dados']}>Meus Dados</Link>
+                    <Link href={'/paciente/consultas'} className={styles['link-consultas']}>Consultas</Link>
+                    <Link href={'/paciente/exames'} className={styles['link-consultas']}>Exames</Link>
                 </div>
             </div>
         </header>

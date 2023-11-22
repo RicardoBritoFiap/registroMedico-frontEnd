@@ -22,8 +22,8 @@ export default function Home() {
             marcar consulta com médicos de todas as especialidades, faça seu cadastro e confira.
           </p>
         
-          <Link href={'login'} className={styles['link-login']}>Login</Link>
-          <Link href={'cadastro'} className={styles['link-register']}>Cadastro</Link>
+          <Link href={'/login'} className={styles['link-login']}>Login</Link>
+          <Link href={'/cadastro'} className={styles['link-register']}>Cadastro</Link>
         </div>
 
         <Image 
@@ -36,3 +36,4 @@ export default function Home() {
       <FooterMain />
     </>
   )
+}

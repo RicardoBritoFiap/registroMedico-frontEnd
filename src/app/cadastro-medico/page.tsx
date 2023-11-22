@@ -1,7 +1,7 @@
 import { FooterMain } from "@/components/footer";
 import { HeaderMain } from "@/components/header";
 import styles from './style.module.scss'
-import { FormPatient } from "@/components/forms";
+import { FormDoctor } from "@/components/forms";
 
 export default function Cadastro() {
     return (
@@ -12,7 +12,7 @@ export default function Cadastro() {
                 <div className={styles.container}>
                     <h2>Cadastro de Conta (Médico)</h2>
 
-                    <FormPatient />
+                    <FormDoctor />
                 </div>
             </main>
 
