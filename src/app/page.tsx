@@ -13,13 +13,17 @@ export default function Home() {
       <main className={styles.menu}>
         <div>
           <h2>
-            Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+            Buscando a qualidade de vida que você merece, faça o seu cadastro e confira.
           </h2>
 
-          <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English to using Content here, content here.</p>
+          <p>
+            A Registro médico, é uma plataforma simples e de fácil usuabilidade onde os médicos
+            poderão disponibilizar consultas e serem remunerados por isso, já os pacientes poderão
+            marcar consulta com médicos de todas as especialidades, faça seu cadastro e confira.
+          </p>
         
-          <Link href={'login'} className={styles['link-login']}>Login</Link>
-          <Link href={'cadastro'} className={styles['link-register']}>Cadastro</Link>
+          <Link href={'/login'} className={styles['link-login']}>Login</Link>
+          <Link href={'/cadastro'} className={styles['link-register']}>Cadastro</Link>
         </div>
 
         <Image 
@@ -33,13 +37,3 @@ export default function Home() {
     </>
   )
 }
-
-
-{/* <Image
-  src="/next.svg"
-  alt="Next.js Logo"
-  width={180}
-  height={37}
-  priority
-/> */}
-{/* <Link href={`link/${Image}`}/> */}
