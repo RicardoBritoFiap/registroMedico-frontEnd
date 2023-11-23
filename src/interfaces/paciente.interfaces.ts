@@ -6,3 +6,12 @@ export interface iUpdatePatient {
     idade: string;
     endereco: string;
 }
+
+
+export interface iExam {
+    leukocytes: string;
+    platelets: string;
+    meanPlateletVolume: string;
+    eosinophils: string;
+    proteinaCReativa: string;
+}

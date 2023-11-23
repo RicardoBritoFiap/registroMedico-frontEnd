@@ -16,7 +16,7 @@ export function HeaderMain() {
                         height={46}
                     />
 
-                    <h1>Registro Médico</h1>
+                    <h1>ConsulTech</h1>
                 </Link>
 
                 <div className={styles['container-btns']}>
@@ -41,7 +41,7 @@ export function HeaderDoctor() {
                         className={styles['icon-logo']}
                     />
 
-                    <h1>Registro Médico</h1>
+                    <h1>ConsultTech</h1>
                 </Link>
 
                 <div className={styles['container-btns']}>
@@ -66,7 +66,7 @@ export function HeaderPatient() {
                         className={styles['icon-logo']}
                     />
 
-                    <h1>Registro Médico</h1>
+                    <h1>ConsulTech</h1>
                 </Link>
 
                 <div className={styles['container-btns']}>

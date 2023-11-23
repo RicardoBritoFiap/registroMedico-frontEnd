@@ -3,18 +3,29 @@ export interface iRegisterPatient {
     email: string;
     senha: string;
     cpf: string;
-    idade: string;
-    endereco: string;
+    dataNascimento: string;
+    sexo: string;
+    logradouro: string;
+    numero: string;
+    uf: string;
+    cidade: string;
+    bairro: string;
+    cep: string;
+    complemento: string;
 }
 
 export interface iRegisterDoctor {
     nome: string;
     email: string;
     senha: string;
-    cpf: string;
     crm: string;
-    endereco: string;
-    estado: string;
+    especialidade: string;
+    telefone: string;
+    logradouro: string;
+    numero: string;
+    uf: string;
     cidade: string;
+    bairro: string;
     cep: string;
+    complemento: string;
 }

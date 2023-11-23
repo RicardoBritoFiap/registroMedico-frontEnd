@@ -4,6 +4,7 @@ import styles from './style.module.scss'
 import ItemExame from "./item";
 import Link from "next/link";
 import { RxExit } from "react-icons/rx";
+import FormExams from "./form";
 
 export default function Exames() {
     return (
@@ -13,9 +14,9 @@ export default function Exames() {
             <main className={styles.menu}>
                 <div className={styles.container}>
                     <section className={styles['section-send-exams']}>
-                        <h2>Enviar Exames</h2>
+                        <h2>Pré-Diagnósticos De Exames</h2>
 
-                        <button>Anexar Arquivos</button>
+                        <FormExams />
                     </section>
 
                     <section className={styles['section-consult']}>

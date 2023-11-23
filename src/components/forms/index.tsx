@@ -62,20 +62,81 @@ export function FormPatient() {
 
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
-                        <label htmlFor="age">Idade</label>
-                        <input id="age" type="text" placeholder="Idade" { ...register('idade') }/>
+                        <label htmlFor="age">Data de Nascimento</label>
+                        <input id="age" type="text" placeholder="dd/mm/yyyy" { ...register('dataNascimento') }/>
                     </div>
 
-                    <span className={errors.idade?.message ? styles['span-error'] : undefined}>{errors.idade?.message ? errors.idade.message : null}</span>
+                    <span className={errors.dataNascimento?.message ? styles['span-error'] : undefined}>{errors.dataNascimento?.message ? errors.dataNascimento.message : null}</span>
                 </div>
 
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
-                        <label htmlFor="address">Endereço</label>
-                        <input id="address" type="text" placeholder="Rua Fagundes, 58" { ...register('endereco') }/>
+                        <label htmlFor="sexo">Sexo</label>
+                        <input id="sexo" type="text" placeholder="joao123@gmail.com" { ...register('sexo') }/>
                     </div>
 
-                    <span className={errors.endereco?.message ? styles['span-error'] : undefined}>{errors.endereco?.message ? errors.endereco.message : null}</span>
+                    <span className={errors.sexo?.message ? styles['span-error'] : undefined}>{errors.sexo?.message ? errors.sexo.message : null}</span>
+                </div>
+
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="address">Logradouro</label>
+                        <input id="address" type="text" placeholder="Rua Fagundes" { ...register('logradouro') }/>
+                    </div>
+
+                    <span className={errors.logradouro?.message ? styles['span-error'] : undefined}>{errors.logradouro?.message ? errors.logradouro.message : null}</span>
+                </div>
+
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="number">Número</label>
+                        <input id="number" type="text" placeholder="1548" { ...register('numero') }/>
+                    </div>
+
+                    <span className={errors.numero?.message ? styles['span-error'] : undefined}>{errors.numero?.message ? errors.numero.message : null}</span>
+                </div>
+
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="uf">UF</label>
+                        <input id="uf" type="text" placeholder="SP" { ...register('uf') }/>
+                    </div>
+
+                    <span className={errors.uf?.message ? styles['span-error'] : undefined}>{errors.uf?.message ? errors.uf.message : null}</span>
+                </div>
+
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="city">Cidade</label>
+                        <input id="city" type="text" placeholder="Campinas" { ...register('cidade') }/>
+                    </div>
+
+                    <span className={errors.cidade?.message ? styles['span-error'] : undefined}>{errors.cidade?.message ? errors.cidade.message : null}</span>
+                </div>
+
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="district">Bairro</label>
+                        <input id="district" type="text" placeholder="Cidade Jardim" { ...register('bairro') }/>
+                    </div>
+
+                    <span className={errors.bairro?.message ? styles['span-error'] : undefined}>{errors.bairro?.message ? errors.bairro.message : null}</span>
+                </div>
+
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="cep">CEP</label>
+                        <input id="cep" type="text" placeholder="12589600" { ...register('cep') }/>
+                    </div>
+
+                    <span className={errors.cep?.message ? styles['span-error'] : undefined}>{errors.cep?.message ? errors.cep.message : null}</span>
+                </div>
+
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="complement">Complemento</label>
+                        <input id="complement" type="text" placeholder="Rua Fagundes, 58" { ...register('complemento') }/>
+                    </div>
                 </div>
             </div>
 
@@ -127,17 +188,8 @@ export function FormDoctor() {
 
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
-                        <label htmlFor="cpf">CPF</label>
-                        <input id="cpf" type="text" placeholder="CPF" { ...register('cpf') }/>
-                    </div>
-
-                    <span className={errors.cpf?.message ? styles['span-error'] : undefined}>{errors.cpf?.message ? errors.cpf.message : null}</span>
-                </div>
-
-                <div className={styles['div-input']}>
-                    <div className={styles['container-input']}>
                         <label htmlFor="crm">CRM</label>
-                        <input id="crm" type="text" placeholder="Idade" { ...register('crm') }/>
+                        <input id="crm" type="text" placeholder="CRM" { ...register('crm') }/>
                     </div>
 
                     <span className={errors.crm?.message ? styles['span-error'] : undefined}>{errors.crm?.message ? errors.crm.message : null}</span>
@@ -145,41 +197,81 @@ export function FormDoctor() {
 
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
-                        <label htmlFor="address">Endereço</label>
-                        <input id="address" type="text" placeholder="Rua Fagundes, 58" { ...register('endereco') }/>
+                        <label htmlFor="specialty">Especialidade</label>
+                        <input id="specialty" type="text" placeholder="Rua Fagundes, 58" { ...register('especialidade') }/>
                     </div>
 
-                    <span className={errors.endereco?.message ? styles['span-error'] : undefined}>{errors.endereco?.message ? errors.endereco.message : null}</span>
+                    <span className={errors.especialidade?.message ? styles['span-error'] : undefined}>{errors.especialidade?.message ? errors.especialidade.message : null}</span>
                 </div>
-
 
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
-                        <label htmlFor="state">Estado</label>
-                        <input id="state" type="text" placeholder="São Paulo" { ...register('estado') }/>
+                        <label htmlFor="phone">Telefone</label>
+                        <input id="phone" type="text" placeholder="11985784596" { ...register('telefone') }/>
                     </div>
 
-                    <span className={errors.estado?.message ? styles['span-error'] : undefined}>{errors.estado?.message ? errors.estado.message : null}</span>
+                    <span className={errors.telefone?.message ? styles['span-error'] : undefined}>{errors.telefone?.message ? errors.telefone.message : null}</span>
                 </div>
 
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="address">Logradouro</label>
+                        <input id="address" type="text" placeholder="Rua Fagundes" { ...register('logradouro') }/>
+                    </div>
+
+                    <span className={errors.logradouro?.message ? styles['span-error'] : undefined}>{errors.logradouro?.message ? errors.logradouro.message : null}</span>
+                </div>
+
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="number">Número</label>
+                        <input id="number" type="text" placeholder="1548" { ...register('numero') }/>
+                    </div>
+
+                    <span className={errors.numero?.message ? styles['span-error'] : undefined}>{errors.numero?.message ? errors.numero.message : null}</span>
+                </div>
+
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="uf">UF</label>
+                        <input id="uf" type="text" placeholder="SP" { ...register('uf') }/>
+                    </div>
+
+                    <span className={errors.uf?.message ? styles['span-error'] : undefined}>{errors.uf?.message ? errors.uf.message : null}</span>
+                </div>
 
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
                         <label htmlFor="city">Cidade</label>
-                        <input id="city" type="text" placeholder="Cidade" { ...register('cidade') }/>
+                        <input id="city" type="text" placeholder="Campinas" { ...register('cidade') }/>
                     </div>
 
                     <span className={errors.cidade?.message ? styles['span-error'] : undefined}>{errors.cidade?.message ? errors.cidade.message : null}</span>
                 </div>
 
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="district">Bairro</label>
+                        <input id="district" type="text" placeholder="Cidade Jardim" { ...register('bairro') }/>
+                    </div>
+
+                    <span className={errors.bairro?.message ? styles['span-error'] : undefined}>{errors.bairro?.message ? errors.bairro.message : null}</span>
+                </div>
 
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
-                        <label htmlFor="postalCode">CEP</label>
-                        <input id="postalCode" type="text" placeholder="12589900" { ...register('cep') }/>
+                        <label htmlFor="cep">CEP</label>
+                        <input id="cep" type="text" placeholder="12589600" { ...register('cep') }/>
                     </div>
 
                     <span className={errors.cep?.message ? styles['span-error'] : undefined}>{errors.cep?.message ? errors.cep.message : null}</span>
+                </div>
+
+                <div className={styles['div-input']}>
+                    <div className={styles['container-input']}>
+                        <label htmlFor="complement">Complemento</label>
+                        <input id="complement" type="text" placeholder="Rua Fagundes, 58" { ...register('complemento') }/>
+                    </div>
                 </div>
             </div>
 

@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ConsulTech (Front-End)
+![Badge Tecnologias](https://img.shields.io/badge/Tecnologias-NextJS%20|%20Sass%20|%20Typescript%20-informational)
 
-## Getting Started
+Este projeto é um App Virtual desenvolvido com objetivo fornecer aos pacientes, consultas médicas de todas as especialidades e fornecer aos médicos trabalho com mais facilidade e com um número maior de pacientes.
 
-First, run the development server:
+O objetivo principal do projeto é criar uma experiência única na procura de atendimento médico, de form prática e segura. Os usuários podem se cadastrar e fazer o login em suas contas podendo vizualizar e ter controle de seus dados, procurar por consultas e também fazerem o envio de pré-diagnósticos.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O projeto foi desenvolvido utilizando tecnologias modernas de desenvolvimento web como, NextJs (sendo o framework), TypeScript, e NextJs App Router. Também utilizamos bibliotecas como React Hook Form, React Toastify, React Icons, Zod e Axios para aprimorar a experiência do usuário e facilitar a integração com a API do backend.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este projeto foi realizado em equipe, seguindo o método Scrum, com o objetivo de se ter um ambiente de desenvolvimento colaborativo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<br>
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Principais Tecnologias
+<div>
+    <img src="https://img.shields.io/badge/NextJs-20232A?style=for-the-badge&logo=nextjs&logoColor=61DAFB" /> 
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" /> 
+    <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" /> 
+</div><br>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Outras bibliotecas 
+<p>React Hook Form</p>
+<p>React Drop Zone</p>
+<p>React Tooltip</p>
+<p>React Icons</p>
+<p>Zod</p>
+<p>Axios</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🛠 Funcionalidades
+<p>✔ Login</p>
+<p>✔ Cadastro de Usuários</p>
+<p>✔ Edição e exclusão de Usuários</p>
+<p>✔ Cadastro de Consultas</p>
+<p>✔ Edição e exclusão de Consultas</p>
+<p>✔ Cadastro de Pré-Diagnósticos</p>
+<p>✔ Consulta de Pré-Diagnósticos</p>
+<p>✔ Responsividade</p>
 
-## Deploy on Vercel
+## ⚙ Características
+<ul>
+    <li>TypeScript utilizado com React.</li>
+    <li>Requisições da Api implementadas com o Axios.</li>
+</ul>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+

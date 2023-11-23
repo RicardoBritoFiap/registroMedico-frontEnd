@@ -15,7 +15,7 @@ export function FooterMain() {
                 <Link href={'https://github.com/TcheloBorgas'} target='_blank' className={styles['link-github']}><Image src={GitHubIcon} alt={'github-icon'} width={26} height={26}/>Marcelo Henrique Borgas - RM 98893</Link>
             </div>
 
-            <span><FaCopyright size='32px' color='white'/>2023 por Registro Médico.</span>
+            <span><FaCopyright size='32px' color='white'/>2023 por ConsulTech.</span>
         </footer>
     )
 }

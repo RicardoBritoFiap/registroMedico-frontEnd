@@ -14,6 +14,15 @@ const updatePatientSchema = z.object({
     endereco: z.union([z.string().nonempty('Endereço obrigatório').min(6, 'Exemplo: Rua Fagundes, 58').max(80, 'Máximo de 80 caracteres'), z.string().max(0)])
 })
 
+const sendExamSchema = z.object({
+    leukocytes: z.string().nonempty('Leukocytes obrigatório'),
+    platelets: z.string().nonempty('Platelets obrigatório'),
+    meanPlateletVolume: z.string().nonempty('Mean Platelet Volume obrigatório'),
+    eosinophils: z.string().nonempty('Eosinophils obrigatório'),
+    proteinaCReativa: z.string().nonempty('Proteína C reativa mg/dL obrigatória')
+})
+
 export {
-    updatePatientSchema
+    updatePatientSchema,
+    sendExamSchema
 }

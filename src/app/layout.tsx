@@ -3,7 +3,7 @@ import { Metadata } from "next"
 import '../scss/main.scss'
 
 export const metadata: Metadata = {
-  title: 'Registro Médico',
+  title: 'ConsulTech',
   description: 'Aqui você encontra',
   icons: 'https://cdn-icons-png.flaticon.com/512/5405/5405432.png'
 }

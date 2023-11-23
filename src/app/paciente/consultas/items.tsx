@@ -31,6 +31,10 @@ export function Item({ nome, data, horario }: iItem) {
 }
 
 export function ItemDoctor({ nome, endereco, estado, cidade, cep }: iItemDoctor) {
+    const newDate = new Date()
+    const dateFormat = newDate.toLocaleDateString()
+    const date = dateFormat.split('/')
+    
     return (
         <>
             <div className={styles['item-doctor']}>
@@ -46,23 +50,31 @@ export function ItemDoctor({ nome, endereco, estado, cidade, cep }: iItemDoctor)
 
                     <select name="dia" id='day'>
                     <option value="">---</option>
-                        <option value="segunda">segunda</option>
-                        <option value="terça">terça</option>
-                        <option value="quarta">quarta</option>
-                        <option value="quinta">quinta</option>
-                        <option value="sexta">sexta</option>
-                        <option value="sábado">sábado</option>
+                        <option value="">{dateFormat}</option>
+                        <option value="">{`${+date[0] + 1}/${date[1]}/${date[2]}`}</option>
+                        <option value="">{`${+date[0] + 2}/${date[1]}/${date[2]}`}</option>
+                        <option value="">{`${+date[0] + 3}/${date[1]}/${date[2]}`}</option>
+                        <option value="">{`${+date[0] + 4}/${date[1]}/${date[2]}`}</option>
+                        <option value="">{`${+date[0] + 5}/${date[1]}/${date[2]}`}</option>
                     </select>
                 </div>
 
                 <div className={styles['box-select']} style={{marginTop: '10px'}}>
-                    <label htmlFor="turn">Turno de Atendimento</label>
+                    <label htmlFor="turn">Horário de Atendimento</label>
 
                     <select name="Turno" id='turn'>
                     <option value="">---</option>
-                        <option value="segunda">Manhã</option>
-                        <option value="terça">Tarde</option>
-                        <option value="quarta">Noite</option>
+                        <option value="08h">08:00</option>
+                        <option value="09h">09:00</option>
+                        <option value="10h">10:00</option>
+                        <option value="11h">11:00</option>
+                        <option value="12h">12:00</option>
+                        <option value="13h">13:00</option>
+                        <option value="14h">14:00</option>
+                        <option value="15h">15:00</option>
+                        <option value="16h">16:00</option>
+                        <option value="17h">17:00</option>
+                        <option value="18h">18:00</option>
                     </select>
                 </div>
 
