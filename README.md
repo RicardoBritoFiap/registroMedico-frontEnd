@@ -1,5 +1,5 @@
 # ConsulTech (Front-End)
-![Badge Tecnologias](https://img.shields.io/badge/Tecnologias-NextJS%20|%20Sass%20|%20Typescript%20-informational)
+
 
 Este projeto é um App Virtual desenvolvido com objetivo fornecer aos pacientes, consultas médicas de todas as especialidades e fornecer aos médicos trabalho com mais facilidade e com um número maior de pacientes.
 
