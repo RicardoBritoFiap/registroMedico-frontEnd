@@ -18,12 +18,12 @@ export default function ConsultasMarcadas() {
                         <div className={styles['header-list']}>
                             <span>Pacientes</span>
                             <span>Data</span>
-                            <span>Turno</span>
+                            <span>Horário</span>
                         </div>
 
-                        <Item nome="Ricardo" data="25/10/2023" turno="Noite"/>
-                        <Item nome="Nicolas" data="25/10/2023" turno="Manhã"/>
-                        <Item nome="João" data="25/10/2023" turno="Tarde"/>
+                        <Item nome="Ricardo" data="25/10/2023" turno="10:00"/>
+                        <Item nome="Nicolas" data="25/10/2023" turno="13:00"/>
+                        <Item nome="João" data="25/10/2023" turno="16:00"/>
                     </ul>
                 </div>
             </main>

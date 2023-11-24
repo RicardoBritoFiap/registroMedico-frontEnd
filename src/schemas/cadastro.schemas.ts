@@ -10,7 +10,7 @@ const registerPatientSchema = z.object({
     .regex(/(?=.*?[A-Z])/, "É necessário pelo menos uma letra maiúscula")
     .regex(/(?=.*?[a-z])/, "É necessário pelo menos uma letra minúscula"),
     cpf: z.string().nonempty('O CPF é obrigatório').min(11, 'Mínimo de 11 dígitos').max(11, 'Máximo de 11 dígitos'),
-    dataNascimento: z.string().nonempty("Idade obrigatória").max(3, 'Máximo de 3 dígitos'),
+    dataNascimento: z.string().nonempty("Idade obrigatória").max(11, 'Máximo de 11 dígitos'),
     sexo: z.string().nonempty('Sexo Obrigatório').max(10, 'Máximo de 10 dígitos'),
     logradouro: z.string().nonempty('Logradouro obrigatório').min(6, 'Exemplo: Rua Fagundes').max(80, 'Máximo de 60 caracteres'),
     numero: z.string().nonempty('Número obrigatório').max(10, 'Máximo de 10 dígitos'),

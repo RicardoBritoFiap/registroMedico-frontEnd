@@ -10,15 +10,50 @@ import { loginSchema } from '@/schemas/login.schemas';
 import { iUpdateMedico } from '@/interfaces/medico.interfaces';
 import { iUpdatePatient } from '@/interfaces/paciente.interfaces';
 import { updatePatientSchema } from '@/schemas/paciente.schemas';
-
+import { api } from '@/services/api';
+import { useRouter } from 'next/navigation';
+import { toast } from 'react-toastify';
+import { useState } from 'react';
+import Cookie from 'js-cookie' 
 
 export function FormPatient() {
+    const router = useRouter()
+
     const { register, handleSubmit, formState: { errors } } = useForm<iRegisterPatient>({
         resolver: zodResolver(registerPatientSchema),
     })
 
-    const registerPatient: SubmitHandler<iRegisterPatient> = (registerData: iRegisterPatient) => {
-        console.log(registerData)
+    const registerPatient: SubmitHandler<iRegisterPatient> = async (registerData: iRegisterPatient) => {
+        try {
+            await api.post('paciente/', registerData).then(() => {
+                toast.success('Cadastrado com sucesso!', {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    });
+
+                setTimeout(() => {
+                    router.push("/login")
+                }, 3500)
+            })
+        }
+        catch {
+            toast.error('Este email já existe, tente novamente.', {
+                position: "bottom-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+        }
     };
 
     return (
@@ -72,7 +107,7 @@ export function FormPatient() {
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
                         <label htmlFor="sexo">Sexo</label>
-                        <input id="sexo" type="text" placeholder="joao123@gmail.com" { ...register('sexo') }/>
+                        <input id="sexo" type="text" placeholder="Masculino" { ...register('sexo') }/>
                     </div>
 
                     <span className={errors.sexo?.message ? styles['span-error'] : undefined}>{errors.sexo?.message ? errors.sexo.message : null}</span>
@@ -135,7 +170,7 @@ export function FormPatient() {
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
                         <label htmlFor="complement">Complemento</label>
-                        <input id="complement" type="text" placeholder="Rua Fagundes, 58" { ...register('complemento') }/>
+                        <input id="complement" type="text" placeholder="Casa" { ...register('complemento') }/>
                     </div>
                 </div>
             </div>
@@ -152,8 +187,39 @@ export function FormDoctor() {
         resolver: zodResolver(registerDoctorSchema),
     })
 
-    const registerDoctor: SubmitHandler<iRegisterDoctor> = (registerData: iRegisterDoctor) => {
-        console.log(registerData)
+    const router = useRouter()
+
+    const registerDoctor: SubmitHandler<iRegisterDoctor> = async (registerData: iRegisterDoctor) => {
+        try {
+            await api.post('medico/', registerData).then(() => {
+                toast.success('Cadastrado com sucesso!', {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    });
+
+                setTimeout(() => {
+                    router.push("/login")
+                }, 3500)
+            })
+        }
+        catch {
+            toast.error('Este email já existe, tente novamente.', {
+                position: "bottom-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                });
+        }    
     };
 
     return (
@@ -198,7 +264,7 @@ export function FormDoctor() {
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
                         <label htmlFor="specialty">Especialidade</label>
-                        <input id="specialty" type="text" placeholder="Rua Fagundes, 58" { ...register('especialidade') }/>
+                        <input id="specialty" type="text" placeholder="Pediatria" { ...register('especialidade') }/>
                     </div>
 
                     <span className={errors.especialidade?.message ? styles['span-error'] : undefined}>{errors.especialidade?.message ? errors.especialidade.message : null}</span>
@@ -270,7 +336,7 @@ export function FormDoctor() {
                 <div className={styles['div-input']}>
                     <div className={styles['container-input']}>
                         <label htmlFor="complement">Complemento</label>
-                        <input id="complement" type="text" placeholder="Rua Fagundes, 58" { ...register('complemento') }/>
+                        <input id="complement" type="text" placeholder="Casa" { ...register('complemento') }/>
                     </div>
                 </div>
             </div>
@@ -339,27 +405,6 @@ export function FormUpdateDoctor() {
                 <input type="text" id='cep' placeholder='CEP' { ...register('cep') }/>
             </div>
 
-            <div className={styles['div-checkbox']}>
-                <h3>Turnos de Atendimento</h3>
-
-                <div>
-                    <div className={styles['box-checkbox']}>
-                        <label htmlFor="manha">Manhã</label>
-                        <input type="checkbox" name="manha" id="manha" />
-                    </div>
-
-                    <div>
-                        <label htmlFor="tarde">Tarde</label>
-                        <input type="checkbox" name="tarde" id="tarde" />
-                    </div>
-
-                    <div>
-                        <label htmlFor="noite">Noite</label>
-                        <input type="checkbox" name="noite" id="noite" />
-                    </div>
-                </div>
-            </div>
-
             <div className={styles['box-btns']}>
                 <button type="submit" className={styles['btn-exclude']}>Excluir Conta</button>
                 <button type="submit" className={styles['btn-update']}>Atualizar Dados</button>
@@ -419,12 +464,74 @@ export function FormUpdatePatient() {
 }
 
 export function FormLogin() {
+    const [ btnName, setBtnName ] = useState('')
+    const router = useRouter()
+
     const { register, handleSubmit, formState: { errors } } = useForm<iLogin>({
         resolver: zodResolver(loginSchema),
     })
 
-    const submitLogin: SubmitHandler<iLogin> = (registerData: iLogin) => {
-        console.log(registerData)
+    const submitLogin: SubmitHandler<iLogin> = async (loginData: iLogin) => {
+        if(btnName === 'paciente'){
+            await api.post('paciente/login', loginData).then((response) => {
+                Cookie.set("consulTech.token", response.data.token)
+                Cookie.set("consulTech.id", response.data.id)
+    
+                toast.success('Login feito com sucesso!', {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    });
+    
+                router.push('/paciente')
+            }).catch(() => {
+                toast.error('Dados inválidos.', {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                });
+            })
+        }
+        else {
+            await api.post('medico/login', loginData).then((response) => {
+                Cookie.set("consulTech.token", response.data.token)
+                Cookie.set("consulTech.id", response.data.id)
+    
+                toast.success('Login feito com sucesso!', {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    });
+    
+                router.push('/medico')
+            }).catch(() => {
+                toast.error('Dados inválidos.', {
+                    position: "bottom-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                });
+            })
+        }
     };
 
     return (
@@ -447,8 +554,8 @@ export function FormLogin() {
                     </div>
                 </div>
 
-                <button type='submit' className={styles['login-paciente']}>Login Paciente</button>
-                <button type='submit' className={styles['login-medico']}>Login Médico</button>
+                <button type='submit' className={styles['login-paciente']} onClick={() => setBtnName('paciente')}>Login Paciente</button>
+                <button type='submit' className={styles['login-medico']} onClick={() => setBtnName('medico')}>Login Médico</button>
             </form>
     )
 }

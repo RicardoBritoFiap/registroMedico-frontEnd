@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import { Metadata } from "next"
 import '../scss/main.scss'
+import { ToastContainer } from "react-toastify"
+import "react-toastify/ReactToastify.css"
 
 export const metadata: Metadata = {
   title: 'ConsulTech',
@@ -17,7 +19,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </head>
-      <body>{children}</body>
+      <body>
+        <ToastContainer />
+        {children}
+      </body>
     </html>
   )
 }

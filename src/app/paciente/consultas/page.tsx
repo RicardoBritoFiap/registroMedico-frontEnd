@@ -31,13 +31,13 @@ export default function Consultas() {
                             <div className={styles['header-list']}>
                                 <span>Medico</span>
                                 <span>Data</span>
-                                <span>Turno</span>
+                                <span>Horário</span>
                             </div>   
 
-                            <Item nome="Ricardo" data="25/10/2023" horario="Manhã"/>
-                            <Item nome="Nicolas" data="25/10/2023" horario="Tarde"/>
-                            <Item nome="João" data="25/10/2023" horario="Tarde"/>
-                            <Item nome="Pedro" data="25/10/2023" horario="Noite"/>
+                            <Item nome="Ricardo" data="25/10/2023" horario="09:00"/>
+                            <Item nome="Nicolas" data="25/10/2023" horario="11:00"/>
+                            <Item nome="João" data="25/10/2023" horario="15:00"/>
+                            <Item nome="Pedro" data="25/10/2023" horario="16:00"/>
 
                         </ul>
                     </section>

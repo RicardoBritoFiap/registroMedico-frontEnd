@@ -39,6 +39,29 @@ Este projeto foi realizado em equipe, seguindo o método Scrum, com o objetivo d
 <p>✔ Consulta de Pré-Diagnósticos</p>
 <p>✔ Responsividade</p>
 
+## Comandos para Rodar o Front-End
+
+<p>Antes certique-se de ter o node e yarn instalado em sua máquina.</p>
+
+<ul>
+    <li>yarn</li>
+    <li>yarn dev</li>
+</ul>
+
+## Comandos para Rodar a API
+
+<p>Para ter o funcionamento total do projeto, é necessário que rode a API antes, para isso deve trocar as váriaveis de
+ambiente para colocando as do seu banco, certificar-se de estar dentro do ambiente virtual e dar os seguintes comandos:</p>
+
+<ul>
+    <li>python -m venv venv</li>
+    <li>source venv/bin/activate</li>
+    <li>pip install -r requirements.txt</li>
+    <li>python manage.py migrate</li>
+    <li>python manage.py runserver</li>
+</ul>
+
+
 ## ⚙ Características
 <ul>
     <li>TypeScript utilizado com React.</li>
