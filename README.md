@@ -14,12 +14,10 @@ Este projeto foi realizado em equipe, seguindo o método Scrum, com o objetivo d
 
 
 ## Principais Tecnologias
-<div>
-    <img src="https://img.shields.io/badge/NextJs-20232A?style=for-the-badge&logo=nextjs&logoColor=61DAFB" /> 
-    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-    <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" /> 
-    <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" /> 
-</div><br>
+<p>NextJs</p>
+<p>TypeScript</p>
+<p>Sass</p>
+<p>React Router</p>
 
 ## Outras bibliotecas 
 <p>React Hook Form</p>
