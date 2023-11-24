@@ -13,7 +13,7 @@ Este projeto foi realizado em equipe, seguindo o método Scrum, com o objetivo d
 <br>
 
 
-## 🚀 Principais Tecnologias
+## Principais Tecnologias
 <div>
     <img src="https://img.shields.io/badge/NextJs-20232A?style=for-the-badge&logo=nextjs&logoColor=61DAFB" /> 
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
@@ -21,7 +21,7 @@ Este projeto foi realizado em equipe, seguindo o método Scrum, com o objetivo d
     <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" /> 
 </div><br>
 
-## 📚 Outras bibliotecas 
+## Outras bibliotecas 
 <p>React Hook Form</p>
 <p>React Drop Zone</p>
 <p>React Tooltip</p>
@@ -29,15 +29,15 @@ Este projeto foi realizado em equipe, seguindo o método Scrum, com o objetivo d
 <p>Zod</p>
 <p>Axios</p>
 
-## 🛠 Funcionalidades
-<p>✔ Login</p>
-<p>✔ Cadastro de Usuários</p>
-<p>✔ Edição e exclusão de Usuários</p>
-<p>✔ Cadastro de Consultas</p>
-<p>✔ Edição e exclusão de Consultas</p>
-<p>✔ Cadastro de Pré-Diagnósticos</p>
-<p>✔ Consulta de Pré-Diagnósticos</p>
-<p>✔ Responsividade</p>
+## Funcionalidades
+<p> Login</p>
+<p> Cadastro de Usuários</p>
+<p> Edição e exclusão de Usuários</p>
+<p> Cadastro de Consultas</p>
+<p> Edição e exclusão de Consultas</p>
+<p> Cadastro de Pré-Diagnósticos</p>
+<p> Consulta de Pré-Diagnósticos</p>
+<p> Responsividade</p>
 
 ## Comandos para Rodar o Front-End
 
@@ -48,21 +48,7 @@ Este projeto foi realizado em equipe, seguindo o método Scrum, com o objetivo d
     <li>yarn dev</li>
 </ul>
 
-## Comandos para Rodar a API
-
-<p>Para ter o funcionamento total do projeto, é necessário que rode a API antes, para isso deve trocar as váriaveis de
-ambiente para colocando as do seu banco, certificar-se de estar dentro do ambiente virtual e dar os seguintes comandos:</p>
-
-<ul>
-    <li>python -m venv venv</li>
-    <li>source venv/bin/activate</li>
-    <li>pip install -r requirements.txt</li>
-    <li>python manage.py migrate</li>
-    <li>python manage.py runserver</li>
-</ul>
-
-
-## ⚙ Características
+## Características
 <ul>
     <li>TypeScript utilizado com React.</li>
     <li>Requisições da Api implementadas com o Axios.</li>
