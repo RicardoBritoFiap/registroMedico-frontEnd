@@ -3,35 +3,35 @@
 A atividade principal do nosso negócio é a realização de teleconsultas e a geração de pré-diagnósticos online utilizando Inteligência Artificial para a leitura de exames enviados pelos pacientes.
 
 
-*DISCLAIMER*
+<p>*DISCLAIMER*</p>
 O nosso front não pode ser integrado a uma API devido a problemas nas outras entregas do trabalho.
 Por isso, para passar do login/cadastro é necessario utilizar a URL http://localhost:3000/medico e http://localhost:3000/paciente.
 <br>
 
 
 ## Principais Tecnologias
-NextJs
-TypeScript
-Sass
-React Router
+<p>NextJs<p>
+<p>TypeScript<p>
+<p>Sass<p>
+<p>React Router<p>
 
 ## Outras bibliotecas 
-React Hook Form
-React Drop Zone
-React Tooltip
-React Icons
-Zod
-Axios
+<p>React Hook Form</p>
+<p>React Drop Zone</p>
+<p>React Tooltip</p>
+<p>React Icons</p>
+<p>Zod</p>
+<p>Axios</p>
 
 ## Funcionalidades
-Login
-Cadastro de Usuários
-Edição e exclusão de Usuários
-Cadastro de Consultas
-Edição e exclusão de Consultas
-Cadastro de Pré-Diagnósticos
-Consulta de Pré-Diagnósticos
-Responsividade
+<p>Login</p>
+<p>Cadastro de Usuários</p>
+<p>Edição e exclusão de Usuários</p>
+<p>Cadastro de Consultas</p>
+<p>Edição e exclusão de Consultas</p>
+<p>Cadastro de Pré-Diagnósticos</p>
+<p>Consulta de Pré-Diagnósticos</p>
+<p>Responsividade</p>
 
 ## Comandos para Rodar o Front-End
 
