@@ -34,8 +34,13 @@ Por isso, para passar do login/cadastro é necessario utilizar a URL http://loca
 <p>Responsividade</p>
 
 ## Comandos para Rodar o Front-End
-
-<p>Antes certique-se de ter o node e yarn instalado em sua máquina.</p>
+<p>Antes rode o powershell como administrador e rode os seguntes comandos</p>
+<p>Set-ExeptionPolicy -ExeptionPolicy RemoteSigned</p>
+<p>Y</p>
+<p>Get-ExecutionPolicy</p>
+<p>Set-ExecutionPolicy -ExecutionPolicy Unrestricted</p>
+<p>Y</p>
+<p>Certique-se de ter o node e yarn instalado em sua máquina.</p>
 
 <ul>
     <li>yarn</li>
