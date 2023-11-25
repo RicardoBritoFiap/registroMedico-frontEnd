@@ -1,41 +1,37 @@
-# ConsulTech (Front-End)
+# ConsulTech/Quick Med Connections
+
+A atividade principal do nosso negócio é a realização de teleconsultas e a geração de pré-diagnósticos online utilizando Inteligência Artificial para a leitura de exames enviados pelos pacientes.
 
 
-Este projeto é um App Virtual desenvolvido com objetivo fornecer aos pacientes, consultas médicas de todas as especialidades e fornecer aos médicos trabalho com mais facilidade e com um número maior de pacientes.
-
-O objetivo principal do projeto é criar uma experiência única na procura de atendimento médico, de form prática e segura. Os usuários podem se cadastrar e fazer o login em suas contas podendo vizualizar e ter controle de seus dados, procurar por consultas e também fazerem o envio de pré-diagnósticos.
-
-O projeto foi desenvolvido utilizando tecnologias modernas de desenvolvimento web como, NextJs (sendo o framework), TypeScript, e NextJs App Router. Também utilizamos bibliotecas como React Hook Form, React Toastify, React Icons, Zod e Axios para aprimorar a experiência do usuário e facilitar a integração com a API do backend.
-
-Este projeto foi realizado em equipe, seguindo o método Scrum, com o objetivo de se ter um ambiente de desenvolvimento colaborativo.
-
-
+*DISCLAIMER*
+O nosso front não pode ser integrado a uma API devido a problemas nas outras entregas do trabalho.
+Por isso, para passar do login/cadastro é necessario utilizar a URL http://localhost:3000/medico e http://localhost:3000/paciente.
 <br>
 
 
 ## Principais Tecnologias
-<p>NextJs</p>
-<p>TypeScript</p>
-<p>Sass</p>
-<p>React Router</p>
+NextJs
+TypeScript
+Sass
+React Router
 
 ## Outras bibliotecas 
-<p>React Hook Form</p>
-<p>React Drop Zone</p>
-<p>React Tooltip</p>
-<p>React Icons</p>
-<p>Zod</p>
-<p>Axios</p>
+React Hook Form
+React Drop Zone
+React Tooltip
+React Icons
+Zod
+Axios
 
 ## Funcionalidades
-<p> Login</p>
-<p> Cadastro de Usuários</p>
-<p> Edição e exclusão de Usuários</p>
-<p> Cadastro de Consultas</p>
-<p> Edição e exclusão de Consultas</p>
-<p> Cadastro de Pré-Diagnósticos</p>
-<p> Consulta de Pré-Diagnósticos</p>
-<p> Responsividade</p>
+Login
+Cadastro de Usuários
+Edição e exclusão de Usuários
+Cadastro de Consultas
+Edição e exclusão de Consultas
+Cadastro de Pré-Diagnósticos
+Consulta de Pré-Diagnósticos
+Responsividade
 
 ## Comandos para Rodar o Front-End
 
