@@ -53,6 +53,8 @@ Por isso, para passar do login/cadastro é necessario utilizar a URL http://loca
     <li>Requisições da Api implementadas com o Axios.</li>
 </ul>
 
-
-
-
+<p>Henry Komatsu - RM550684</p>
+<p>Marcel Soddano - RM99841</p>
+<p>Marcelo Henrique - RM98893</p>
+<p>Nicolas Inohue - RM98057</p>
+<p>Ricardo Brito - RM98370</p>
